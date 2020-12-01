@@ -1,0 +1,166 @@
+.footer {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  
+    .social-container {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10;
+        overflow: hidden;
+    }
+
+    li {
+        display: inline;
+    }
+    
+    li a {
+        display: inline-block;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+    }
+    
+    .fa-spotify {
+        color: #1DB954;
+        text-decoration: none;
+    }
+    
+    .fa-spotify:hover {
+        color: #FFFFFF;
+        padding: 5px 0;
+        border-bottom: 3px solid #1DB954;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+    }
+    
+    .fa-apple {
+        color: #A3AAAE;
+        text-decoration: none;
+    }
+    
+    .fa-apple:hover {
+        color: #F9F6EF;
+        padding: 5px 0;
+        border-bottom: 3px solid #A3AAAE;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+    }
+    
+    .fa-soundcloud {
+        color: #FE5000;
+        text-decoration: none;
+    }
+    
+    .fa-soundcloud:hover {
+        color: #ffffff;
+        padding: 5px 0;
+        border-bottom: 3px solid #FE5000;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+    }
+    
+    .fa-bandcamp {
+        color: #629aa9;
+        text-decoration: none;
+    }
+    
+    .fa-bandcamp:hover {
+        color: #ffffff;
+        padding: 5px 0;
+        border-bottom: 3px solid #629aa9;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+    }
+    
+    .fa-instagram {
+        color: #5851DB;
+        text-decoration: none;
+    }
+    
+    .fa-instagram:hover {
+        color: #C13584;
+        padding: 5px 0;
+        border-bottom: 3px solid #F56040;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+    }
+    
+    .fa-twitter {
+        color: #1DA1F2;
+        text-decoration: none;
+    }
+    
+    .fa-twitter:hover {
+        color: #F5F8FA;
+        padding: 5px 0;
+        border-bottom: 3px solid #1DA1F2;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+    }
+    
+    .fa-facebook {
+        color: #4267B2;
+        text-decoration: none;
+    }
+    
+    .fa-facebook:hover {
+        color: #FFFFFF;
+        padding: 5px 0;
+        border-bottom: 3px solid #4267B2;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+    }
+    
+    .fa-twitch {
+        color: #6441A4;
+        text-decoration: none;
+    }
+    
+    .fa-twitch:hover {
+        color: #FFFFFF;
+        padding: 5px 0;
+        border-bottom: 3px solid #6441A4;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+    }
+    
+    .fa-youtube {
+        color: #FF0000;
+        text-decoration: none;
+    }
+    
+    .fa-youtube:hover {
+        color: #282828;
+        padding: 5px 0;
+        border-bottom: 3px solid #FF0000;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+    }
+
+    .fa-discord {
+        color: #7289DA;
+        text-decoration: none;
+    }
+
+    .fa-discord:hover {
+        color: #FFFFFF;
+        padding: 5px 0;
+        border-bottom: 3px solid #7289DA;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
+    }
+  }

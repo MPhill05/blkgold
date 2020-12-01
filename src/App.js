@@ -9,6 +9,7 @@ import StorePage from './pages/store/store.component';
 import TourPage from './pages/tour/tour.component';
 import ContactPage from './pages/contact/contact.component';
 import Header from './components/header/header.component';
+import Footer from './components/footer/footer.component';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/tour' component={TourPage} />
         <Route path='/contact' component={ContactPage} />
       </Switch>
+      <Footer />
     </div>
   );
 }

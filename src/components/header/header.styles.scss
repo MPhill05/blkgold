@@ -5,6 +5,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  -webkit-box-shadow: 0px 1px 1px #D4AF37;
+  -moz-box-shadow: 0px 1px 1px #D4AF37;
+  box-shadow: 0px 1px 1px #D4AF37;
 
   .logo-container {
     height: 100%;
@@ -22,6 +25,15 @@
 
     .option {
       padding: 10px 15px;
+      color: #D4AF37;
+      text-decoration: none;
+    }
+
+    .option:hover {
+        font-weight: bold;
+        border-bottom: 1px solid #D4AF37;
+        -webkit-transition: border-bottom 0.2s;
+        transition: border-bottom 0.2s;
     }
   }
 }

@@ -13,7 +13,7 @@ import Footer from './components/footer/footer.component';
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />

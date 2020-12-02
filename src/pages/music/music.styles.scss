@@ -1,0 +1,36 @@
+.musicContainer {
+  outline: 1px solid red;
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  height: 80vh;
+  width: 70%;
+  margin: auto;
+}
+
+.titleContainer {
+  top: 0;
+  color: white;
+}
+
+strong {
+  margin-left: 1em;
+  color: #D4AF37;
+}
+
+hr {
+    height: 1px;
+    background-color: #D4AF37;
+    border: none;
+}
+
+.music {
+    outline: 1px solid red;
+}
+
+@media only screen and (min-width: 700px) {
+  .musicContainer {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+}

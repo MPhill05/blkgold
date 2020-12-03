@@ -1,6 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.scss';
 
 import HomePage from './pages/homepage/homepage.component';
@@ -13,7 +15,7 @@ import Footer from './components/footer/footer.component';
 
 function App() {
   return (
-    <div className='container'>
+    <div className='container container-fluid'>
       <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />

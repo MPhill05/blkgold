@@ -2,29 +2,62 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { ReactComponent as Logo } from '../../assets/blkgoldLogo.svg';
+import { Navbar, Nav } from 'react-bootstrap'
 
 import './header.styles.scss';
 
 const Header = () => (
-    <div className='header container-fluid'>
-        <Link className='logo-container' to="/">
-            <Logo className='logo' />
-        </Link>
-        <div className='options'>
-            <Link className='option' to='/music'>
-                Music
+    <Navbar>
+        <Navbar.Brand>
+            <Link className='logo-container' to="/">
+                <Logo className='logo' />
             </Link>
-            <Link className='option' to='/store'>
-                Store
+        </Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className='justify-content-end'>
+            <Nav.Link>
+                <Link className='option' to='/music'>
+                    Music
             </Link>
-            <Link className='option' to='/tour'>
-                Tour
+            </Nav.Link>
+            <Nav.Link>
+                <Link className='option' to='/store'>
+                    Store
             </Link>
-            <Link className='option' to='/contact'>
-                Contact
+            </Nav.Link>
+            <Nav.Link>
+                <Link className='option' to='/tour'>
+                    Tour
             </Link>
-        </div>
-    </div>
+            </Nav.Link>
+            <Nav.Link>
+                <Link className='option' to='/contact'>
+                    Contact
+            </Link>
+            </Nav.Link>
+        </Navbar.Collapse>
+    </Navbar>
 )
+
+/* <div className='header container-fluid'>
+    <Link className='logo-container' to="/">
+        <Logo className='logo' />
+    </Link>
+    <div className='options'>
+        <Link className='option' to='/music'>
+            Music
+        </Link>
+        <Link className='option' to='/store'>
+            Store
+        </Link>
+        <Link className='option' to='/tour'>
+            Tour
+        </Link>
+        <Link className='option' to='/contact'>
+            Contact
+        </Link>
+    </div>
+</div> */
+
 
 export default Header;

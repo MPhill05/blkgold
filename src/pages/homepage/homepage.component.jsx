@@ -2,9 +2,10 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 
 import './homepage.styles.scss';
+import { Container } from 'react-bootstrap';
 
 const HomePage = () => (
-    <div className='homeContainer'>
+    <Container fluid className='homeContainer'>
         <ReactPlayer
             className='player'
             url='https://soundcloud.com/blkgoldmusic/under-control-blkgold-remix'
@@ -20,7 +21,7 @@ const HomePage = () => (
                 >Free Download</a>
             </h3>
         </div>
-    </div>
+    </Container>
 )
 
 export default HomePage;

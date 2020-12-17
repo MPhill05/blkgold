@@ -1,9 +1,17 @@
 .musicContainer {
-  // outline: 1px solid red;
   background-color: rgba($color: #000000, $alpha: 0.7);
-  height: 80vh;
+  height: 85vh;
   width: 80%;
+  padding-top: 50px;
   margin: auto;
+  overflow: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.musicContainer::-webkit-scrollbar {
+  display: none;
 }
 
 .titleContainer {
@@ -13,20 +21,24 @@
 
 strong {
   margin-left: 1em;
-  color: #D4AF37;
+  color: #d4af37;
 }
 
 hr {
-    height: 1px;
-    background-color: #D4AF37;
-    border: none;
+  height: 1px;
+  background-color: #d4af37;
+  border: none;
 }
 
 .music {
-    outline: 1px solid red;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.coverArt {
+  margin: auto;
+  text-align: center;
 }
 
 .coverArt img {
@@ -36,11 +48,28 @@ hr {
   height: auto;
 }
 
+@media only screen and (max-width: 992px) {
+  .music {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  .musicContainer {
+    padding-top: 130px;
+  }
+
+  .music {
+    margin: auto;
+  }
+}
+
 @media only screen and (min-width: 700px) {
   .musicContainer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    overflow: scroll;
   }
 }

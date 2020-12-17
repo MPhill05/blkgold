@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, InputGroup } from 'react-bootstrap';
+import { Button, Form, FormControl, InputGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './footer.styles.scss';
@@ -19,11 +19,20 @@ const Footer = () => (
             <li><a href="https://www.youtube.com/channel/UCHxIz4bqSJMknjlg6hjzS5Q" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faYoutube} /></a></li>
             <li><a href="https://discord.gg/RAyGVw9k" rel="noopener noreferrer" target="_blank"><FontAwesomeIcon icon={faDiscord} /></a></li>
         </ul>
-        <Form inline>
+        <Form inline className='inputGroup'>
             <InputGroup>
                 <InputGroup.Prepend>
                     <InputGroup.Text id='basic-addon1'>@</InputGroup.Text>
                 </InputGroup.Prepend>
+                <FormControl
+                    className='form-control'
+                    placeholder='Join Mailing List'
+                    aria-label='Join Mailing List'
+                    aria-describedby='basic-addon1'
+                />
+                <InputGroup.Append>
+                    <Button variant='outline-secondary'>Subscribe</Button>
+                </InputGroup.Append>
             </InputGroup>
         </Form>
     </div>

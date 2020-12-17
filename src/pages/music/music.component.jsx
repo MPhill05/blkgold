@@ -4,6 +4,8 @@ import CoverArt2 from '../../assets/SandboxCoverArt.jpg';
 import CoverArt3 from '../../assets/atreides final FRONT.png';
 
 import './music.styles.scss';
+import { Container, Col, Row } from 'react-bootstrap';
+
 
 const MusicPage = () => (
     <div className='musicContainer'>
@@ -11,17 +13,19 @@ const MusicPage = () => (
             <strong>MUSIC</strong>
             <hr />
         </div>
-        <div className='music'>
-            <div className='coverArt'>
-                return <img src={CoverArt1} alt='Cover Art' class='first' />;
-            </div>
-            <div className='coverArt'>
-                return <img src={CoverArt2} alt='Cover Art' class='second' />;
-            </div>
-            <div className='coverArt'>
-                return <img src={CoverArt3} alt='Cover Art' class='third' />;
-            </div>
-        </div>
+        <Container fluid className='music'>
+            <Row>
+                <Col sm={12} md={4} className='coverArt'>
+                    <img src={CoverArt1} alt='Cover Art' class='first' />;
+            </Col>
+                <Col sm={12} md={4} className='coverArt'>
+                    <img src={CoverArt2} alt='Cover Art' class='second' />;
+            </Col>
+                <Col sm={12} md={4} className='coverArt'>
+                    <img src={CoverArt3} alt='Cover Art' class='third' />;
+            </Col>
+            </Row>
+        </Container>
     </div>
 )
 

@@ -5,11 +5,11 @@ import './homepage.styles.scss';
 import { Container } from 'react-bootstrap';
 
 const HomePage = () => (
-    <Container fluid className='homeContainer'>
+    <Container fluid sm={12} md={8} lg={8} className='homeContainer'>
         <ReactPlayer
             className='player'
             url='https://soundcloud.com/blkgoldmusic/under-control-blkgold-remix'
-            width='100%'
+            width='80%'
             height='100%'
         />
         <div className='trackInfo'>

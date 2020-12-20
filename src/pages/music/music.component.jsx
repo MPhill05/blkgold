@@ -4,7 +4,10 @@ import CoverArt2 from '../../assets/SandboxCoverArt.jpg';
 import CoverArt3 from '../../assets/atreides final FRONT.png';
 
 import './music.styles.scss';
-import { Container, Col, Row, Modal } from 'react-bootstrap';
+import { Container, Col, Row, Modal, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faSoundcloud } from '@fortawesome/free-brands-svg-icons';
 
 class MusicPage extends React.Component {
     constructor() {
@@ -17,12 +20,29 @@ class MusicPage extends React.Component {
         }
     }
 
+    defaultModal() {
+        this.setState({
+            show: false,
+            modalTitle: '',
+            coverArt: '',
+            infoContent: ''
+        })
+    }
+
     handleModal1() {
         this.setState({
             show: !this.state.show,
             modalTitle: 'Under Control Remix',
             modalCoverArt: CoverArt1,
-            infoContent: ''
+            infoContent:
+                <Button
+                    size='lg'
+                    className='modalButton'>
+                    <a href="https://soundcloud.com/blkgoldmusic/under-control-blkgold-remix"
+                        rel="noopener noreferrer" target="_blank">
+                        <FontAwesomeIcon icon={faSoundcloud} />
+                    </a>
+                </Button>,
         })
     }
 
@@ -55,21 +75,23 @@ class MusicPage extends React.Component {
                     <Row>
                         <Col onClick={() => { this.handleModal1() }} sm={12} md={4} className='coverArt'>
                             <img src={CoverArt1} alt='Cover Art' />;
-
                         </Col>
                         <Col onClick={() => { this.handleModal2() }} sm={12} md={4} className='coverArt'>
                             <img src={CoverArt2} alt='Cover Art' />;
-
                         </Col>
                         <Col onClick={() => { this.handleModal3() }} sm={12} md={4} className='coverArt'>
                             <img src={CoverArt3} alt='Cover Art' />;
-
                         </Col>
                     </Row>
                 </Container>
+
+                {/* Modal */}
                 <Modal className='my-modal' show={this.state.show} size='lg' centered>
-                    <Modal.Header closeButton onClick={ this.setState.show }>
+                    <Modal.Header>
                         <h5 ref='header text'>{this.state.modalTitle}</h5>
+                        <Button className='timesFA' onClick={() => { this.defaultModal() }}>
+                            <FontAwesomeIcon icon={faTimes} />
+                        </Button>
                     </Modal.Header>
                     <Modal.Body className='modalBody'>
                         <img src={this.state.modalCoverArt} className='img-fluid' alt='Cover Art' />

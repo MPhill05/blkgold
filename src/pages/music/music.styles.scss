@@ -39,6 +39,7 @@ hr {
 .coverArt {
   margin: auto;
   text-align: center;
+  cursor: pointer;
 }
 
 .coverArt img {
@@ -46,6 +47,28 @@ hr {
   padding: 10px auto;
   max-width: 100%;
   height: auto;
+}
+
+.modalButton {
+  background-color: white;
+  border: none;
+}
+
+.modalButton:hover {
+  background-color: white;
+  border: none;
+}
+
+.timesFA {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+.timesFA:hover {
+  background-color: white;
+  border: none;
+  color: #d4af37;
 }
 
 .modalBody img {

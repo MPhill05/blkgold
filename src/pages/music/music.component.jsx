@@ -6,8 +6,8 @@ import CoverArt3 from '../../assets/atreides final FRONT.png';
 import './music.styles.scss';
 import { Container, Col, Row, Modal, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import { faSoundcloud } from '@fortawesome/free-brands-svg-icons';
+import { faDownload, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBandcamp, faSoundcloud, faSpotify, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 class MusicPage extends React.Component {
     constructor() {
@@ -34,15 +34,20 @@ class MusicPage extends React.Component {
             show: !this.state.show,
             modalTitle: 'Under Control Remix',
             modalCoverArt: CoverArt1,
-            infoContent:
-                <Button
-                    size='lg'
-                    className='modalButton'>
-                    <a href="https://soundcloud.com/blkgoldmusic/under-control-blkgold-remix"
-                        rel="noopener noreferrer" target="_blank">
-                        <FontAwesomeIcon icon={faSoundcloud} />
-                    </a>
-                </Button>,
+            infoContent: [
+                <li><a href="https://soundcloud.com/blkgoldmusic/under-control-blkgold-remix"
+                    rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faSoundcloud} size='3x' />
+                </a></li>,
+                <li><a href="https://youtu.be/TX1aGfhgjfA"
+                    rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faYoutube} size='3x' />
+                </a></li>,
+                <li><a href="https://www.toneden.io/blkgoldmusic/post/under-control-blkgold-remix"
+                    rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faDownload} size='3x' />
+                </a></li>
+            ]
         })
     }
 
@@ -51,7 +56,20 @@ class MusicPage extends React.Component {
             show: !this.state.show,
             modalTitle: 'Sandbox',
             modalCoverArt: CoverArt2,
-            infoContent: ''
+            infoContent: [
+                <li><a href="https://open.spotify.com/track/2WesyiDwZiMgsxYM8C6Fdp"
+                    rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faSpotify} size='3x' />
+                </a></li>,
+                <li><a href="https://soundcloud.com/blkgoldmusic/sandbox"
+                    rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faSoundcloud} size='3x' />
+                </a></li>,
+                <li><a href="https://youtu.be/KePzJu_h-xI"
+                    rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faYoutube} size='3x' />
+                </a></li>
+            ]
         })
     }
 
@@ -60,7 +78,20 @@ class MusicPage extends React.Component {
             show: !this.state.show,
             modalTitle: 'JRNY',
             modalCoverArt: CoverArt3,
-            infoContent: ''
+            infoContent: [
+                <li><a href="https://open.spotify.com/track/7cua8hdvRigUI8eyGBa1Oe"
+                    rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faSpotify} size='3x' />
+                </a></li>,
+                <li><a href="https://soundcloud.com/blkgoldmusic/jrny"
+                    rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faSoundcloud} size='3x' />
+                </a></li>,
+                <li><a href="ripplestowaves.bandcamp.com/releases"
+                    rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faBandcamp} size='3x' />
+                </a></li>,
+            ]
         })
     }
 
@@ -97,7 +128,7 @@ class MusicPage extends React.Component {
                         <img src={this.state.modalCoverArt} className='img-fluid' alt='Cover Art' />
                     </Modal.Body>
                     <Modal.Footer className='modalFooter'>
-                        <p ref='downloadLinks'>{this.state.infoContent}</p>
+                        <ul ref='downloadLinks'>{this.state.infoContent}</ul>
                     </Modal.Footer>
                 </Modal>
             </div>

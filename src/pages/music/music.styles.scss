@@ -42,6 +42,11 @@ hr {
   cursor: pointer;
 }
 
+.coverArt:hover {
+  transition: transform 1s; /* Animation */
+  transform: scale(1.05);
+}
+
 .coverArt img {
   width: 400px;
   padding: 10px auto;
@@ -76,13 +81,134 @@ hr {
   width: 100%;
 }
 
-.modalFooter p {
+.modalFooter ul {
   text-align: center;
   margin: auto;
+  font-size: large;
+  li {
+    padding: 0 40px;
+  }
 }
 
-.modal-backdrop {
-  background-color: black;
+// .modalFooter ul li {}
+
+.fa-spotify {
+  color: #1db954;
+  text-decoration: none;
+}
+
+.fa-spotify:hover {
+  border-bottom: 2px solid #1db954;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.fa-apple {
+  color: #a3aaae;
+  text-decoration: none;
+}
+
+.fa-apple:hover {
+  border-bottom: 2px solid #a3aaae;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.fa-soundcloud {
+  color: #fe5000;
+  text-decoration: none;
+}
+
+.fa-soundcloud:hover {
+  border-bottom: 2px solid #fe5000;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.fa-bandcamp {
+  color: #629aa9;
+  text-decoration: none;
+}
+
+.fa-bandcamp:hover {
+  border-bottom: 2px solid #629aa9;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.fa-instagram {
+  color: #5851db;
+  text-decoration: none;
+}
+
+.fa-instagram:hover {
+  color: #c13584;
+  border-bottom: 2px solid #f56040;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.fa-twitter:hover {
+  color: #f5f8fa;
+  border-bottom: 2px solid #1da1f2;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.fa-facebook {
+  color: #4267b2;
+  text-decoration: none;
+}
+
+.fa-facebook:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #4267b2;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.fa-twitch {
+  color: #6441a4;
+  text-decoration: none;
+}
+
+.fa-twitch:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #6441a4;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.fa-youtube {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.fa-youtube:hover {
+  border-bottom: 2px solid #ff0000;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.fa-download {
+  text-decoration: none;
+}
+
+.fa-download:hover {
+  border-bottom: 2px solid blue;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .fa-download {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 992px) {

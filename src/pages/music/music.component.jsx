@@ -2,6 +2,7 @@ import React from 'react';
 import CoverArt1 from '../../assets/ucRemixCoverArt.jpg';
 import CoverArt2 from '../../assets/SandboxCoverArt.jpg';
 import CoverArt3 from '../../assets/atreides final FRONT.png';
+import CoverArt4 from '../../assets/crwth.jpg';
 
 import './music.styles.scss';
 import { Container, Col, Row, Modal, Button } from 'react-bootstrap';
@@ -95,6 +96,20 @@ class MusicPage extends React.Component {
         })
     }
 
+    handleModal4() {
+        this.setState({
+            show: !this.state.show,
+            modalTitle: 'Ultimate',
+            modalCoverArt: CoverArt4,
+            infoContent: [
+                <li><a href="https://soundcloud.com/blkgoldmusic/ultimate-blkgold-remix"
+                    rel="noopener noreferrer" target="_blank">
+                    <FontAwesomeIcon icon={faSoundcloud} size='3x' />
+                </a></li>,
+            ]
+        })
+    }
+
     render() {
         return (
             <div className='musicContainer'>
@@ -112,6 +127,13 @@ class MusicPage extends React.Component {
                         </Col>
                         <Col onClick={() => { this.handleModal3() }} sm={12} md={4} className='coverArt'>
                             <img src={CoverArt3} alt='Cover Art' />;
+                        </Col>
+                    </Row>
+                </Container>
+                <Container fluid className='music2'>
+                    <Row>
+                        <Col onClick={() => { this.handleModal4() }} sm={12} md={6} lg={8} xl={12} className='coverArt'>
+                            <img src={CoverArt4} alt='Cover Art' />;
                         </Col>
                     </Row>
                 </Container>

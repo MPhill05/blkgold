@@ -1,0 +1,54 @@
+#basic-addon1 {
+  background-color: black;
+  color: #d4af37;
+  border: 1px solid #d4af37;
+}
+
+.form-control {
+  outline: #d4af37;
+  box-shadow: none;
+  border: 1px solid #d4af37;
+  background-color: black;
+  color: white;
+}
+
+.form-control:valid,
+textarea:hover,
+input:hover,
+input:active,
+input:focus,
+label:focus,
+.btn:active,
+.btn:focus {
+  background-color: black !important;
+  color: #d4af37 !important;
+  outline: none !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+textarea:focus,
+input:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: black;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+  }
+
+.btn {
+  border: 1px solid #d4af37;
+  color: white;
+}
+
+.btn:hover {
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  background-color: black;
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}

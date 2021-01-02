@@ -154,39 +154,6 @@
     -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
   }
-
-  #basic-addon1 {
-    background-color: black;
-    color: #d4af37;
-    border: 1px solid #d4af37;
-  }
-
-  .form-control {
-    outline: #d4af37;
-    box-shadow: none;
-    border: 1px solid #d4af37;
-    color: #d4af37;
-  }
-
-  .form-control:valid {
-    background-color: black;
-  }
-
-  textarea:focus,
-  input:focus {
-    border-color: inherit;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-
-  .btn {
-    border: 1px solid #d4af37;
-  }
-
-  .btn:hover {
-    color: #d4af37;
-    background-color: black;
-  }
 }
 
 // @media only screen and (max-width: 1024px) {
